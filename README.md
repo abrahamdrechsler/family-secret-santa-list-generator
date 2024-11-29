@@ -1,2 +1,2 @@
-# family-secrete-santa-list-generator
+# family-secret-santa-list-generator
 configurable secrete santa list generator
