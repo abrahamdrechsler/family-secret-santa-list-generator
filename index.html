@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Secret Santa Organizer</h1>
+        <label>
+            <input type="checkbox" id="prevent-same-group" />
+            Prevent assignments within the same group
+        </label>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Add Family Members</h2>
+            <form id="member-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required />
+                <label for="group">Group:</label>
+                <input type="text" id="group" required />
+                <button type="button" id="add-member">Add Member</button>
+            </form>
+            <div id="member-list">
+                <h3>Members:</h3>
+                <ul id="members">
+                    <!-- Members will be dynamically added here -->
+                </ul>
+            </div>
+            <button id="generate-list">Generate Secret Santa List</button>
+        </section>
+        <section id="output-section">
+            <h2>Secret Santa Pairs</h2>
+            <ul id="results"></ul>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
